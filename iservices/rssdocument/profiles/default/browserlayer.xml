@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<layers>  
+  <layer name="iservices.rssdocument"
+         interface="iservices.rssdocument.interfaces.IRSSDocumentLayer" />
+</layers>

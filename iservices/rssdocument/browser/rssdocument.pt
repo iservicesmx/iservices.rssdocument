@@ -1,0 +1,30 @@
+<html metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone" >
+<title>
+    <script type="application/x-javascript"
+            metal:fill-slot="javascript_head_slot"
+            src="++resource++jquery.zrssfeed.min.js"
+            tal:attributes="src string:${portal_url}/++resource++jquery.zrssfeed.min.js">
+    </script>
+</title>
+<body>
+<div metal:fill-slot="main" i18n:domain="iservices.rssdocument">
+        <h1 tal:content="context/Title"
+            class="documentFirstHeading" >
+          Title
+        </h1>
+        <div id="parent-fieldname-description" class="documentDescription"
+             tal:content="context/Description">
+        </div>
+        
+        <div id="rsscontainer" >
+                <p i18n:translate="">Loading RSS items. Please wait ...</p>
+        </div>
+        <script type="text/javascript"
+                src="@@rss_code.js"
+                tal:attributes="src string:${context/absolute_url}/@@rss_code.js">
+        </script>
+        
+</div>
+</body>
+</html>

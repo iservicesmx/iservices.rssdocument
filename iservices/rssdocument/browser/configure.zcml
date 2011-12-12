@@ -1,0 +1,24 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="iservices.rssdocument" >
+
+    <browser:page
+        for="iservices.rssdocument.interfaces.IRSSDocument"
+        layer="iservices.rssdocument.interfaces.IRSSDocumentLayer"
+        name="rssdocument_view"
+        template="rssdocument.pt"
+        permission="zope2.View"
+        />
+    <browser:page
+        for="iservices.rssdocument.interfaces.IRSSDocument"
+        layer="iservices.rssdocument.interfaces.IRSSDocumentLayer"
+        name="rss_code.js"
+        class=".rsscode.rsscodeView"
+        permission="zope2.View"
+        />
+  <!-- Zope 3 browser resources -->
+    <browser:resource
+        name="jquery.zrssfeed.min.js"
+        file="resources/jquery.zrssfeed.min.js"
+        />
+</configure>

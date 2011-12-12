@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<object name="RSSDocument"
+   meta_type="Factory-based Type Information with dynamic views"
+   i18n:domain="iservices.rssdocument" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+  <property name="title" i18n:translate="">RSS Dynamic Document</property>
+  <property name="description"
+    i18n:translate="">A dynamic RSS content-type for plone</property>
+
+  <property name="content_meta_type">RSSDocument</property>
+  <property name="content_icon">rss.gif</property>
+  <property name="product">iservices.rssdocument</property>
+  <property name="factory">addRSSDocument</property>
+
+  <property name="immediate_view">atct_edit</property>
+  <property name="global_allow">True</property>
+  <property name="filter_content_types">False</property>
+  <property name="allow_discussion">False</property>
+
+  <property name="default_view">@@rssdocument_view</property>
+  <property name="view_methods">
+    <element value="@@rssdocument_view" />
+  </property>
+  <alias from="(Default)" to="@@rssdocument_view" />
+  <alias from="edit" to="atct_edit" />
+  <alias from="sharing" to="@@sharing" />
+  <alias from="view" to="@@rssdocument_view" />
+
+  <action title="View" action_id="view" category="object" condition_expr=""
+    url_expr="string:${object_url}/" visible="True">
+    <permission value="View" />
+  </action>
+  <action title="Edit" action_id="edit" category="object" condition_expr=""
+    url_expr="string:${object_url}/edit" visible="True">
+    <permission value="Modify portal content" />
+  </action>
+
+
+</object>
+

@@ -1,0 +1,9 @@
+Changelog
+=========
+
+Please, see README.txt instead.
+
+0.1dev (unreleased)
+-------------------
+
+- Initial release
