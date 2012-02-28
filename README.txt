@@ -15,6 +15,10 @@ Changelog
 
 Please, see README.txt instead.
 
+0.4.1 (unreleased)
+------------------
+- Added MANIFEST.in so all files included when creating an egg from this package
+
 0.4 (unreleased)
 ..................
 - Plone 4.1 compatibility
