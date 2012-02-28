@@ -17,7 +17,7 @@ Please, see README.txt instead.
 
 0.4.1 (unreleased)
 ------------------
-- Added MANIFEST.in so all files included when creating an egg from this package
+- Added MANIFEST.in so all files included when creating an egg from this package [kcleong]
 
 0.4 (unreleased)
 ..................
