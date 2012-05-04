@@ -17,7 +17,9 @@
              tal:content="context/Description">
         </div>
         
-        <div id="rsscontainer" >
+        <div id="rsscontainer" 
+            tal:attributes="id string:rsscontainer-${context/UID}">
+
                 <p i18n:translate="">Loading RSS items. Please wait ...</p>
         </div>
         <script type="text/javascript"

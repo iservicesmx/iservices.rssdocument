@@ -15,6 +15,10 @@ Changelog
 
 Please, see README.txt instead.
 
+0.5 (unreleased)
+----------------
+- New automatic id generation for div container [erikriver]
+
 0.4.1 (unreleased)
 ------------------
 - Added MANIFEST.in so all files included when creating an egg from this package [kcleong]
